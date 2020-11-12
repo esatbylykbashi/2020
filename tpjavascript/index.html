@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="select">
+        <!-- Lorsque l'on clique sur le bouton, le navigateur
+             va lire le texte dans "onclick" et l'exécuter 
+             en tant que javascript. -->
+        <button onclick="attacheEtAffiche('bonjour','les loulous')">
+            Test js
+        </button>
+        <button onclick="alert(multiplie(4, 23))">
+            Test multi
+        </button>
+        <button onclick="changeButton()" id="direbonjour">
+            Bonjour
+        </button>
+
+        <article>
+            <h1>Title</h1>
+            <section>
+                Première section de mon article.
+            </section>
+            <section>
+                Deuxième section de mon article.
+            </section>
+            <section>
+                Cette section de mon article contient du code formatté.
+
+                <!-- balise <pre> pratique pour afficher du code -->
+                <pre>
+function attache(mot1, mot2){
+    return mot1 + " " + mot2 + " !";
+}
+                </pre>
+            </section>
+        </article>
+
+    </main>
+
+    <!-- 
+        Vous faites ce que je vous dis, vous mettez la balise 
+        <script> à la fin ;-)     
+    -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

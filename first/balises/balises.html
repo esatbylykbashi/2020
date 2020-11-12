@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>balises</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="img/logo-google.png" width="200px" height="200px" />
+        <b>LOGO</b>
+        <h1>dwwm93.slack.com</h1>
+    </header>
+    <main>
+        <a href="#a">A</a>
+        <a href="#b">B</a>
+        <a href="#c">C</a>
+        <!-- 
+            balise pour les titre par niveau
+            H1 niveau le plus haut et H6 niveau le plus bas
+        
+        -->
+        <h1>titre niveau 1</h1>
+        <h2>titre niveau 2</h2>
+        <h3>titre niveau 3</h3>
+        <h4>titre niveau 4</h4>
+        <h5>titre niveau 5</h5>
+        <h6>titre niveau 6</h6>
+
+        <p>premier <b>paragapge</b></p>
+
+        mon <b>text</b> <br/>sur le site des basiles
+        <hr/>
+        <!-- les 3 types des liens -->
+        <a href="index.html">interne du site</a>
+        <br>
+        <a href="https://google.fr" target="_blank">externe du site</a>
+        <br>
+        <a href="#logo">interne de la page</a>
+        <br>
+        <video width="320" height="240" src="../video/chaton.mp4"></video>
+        <p id="a"> aaaaaaaaaa </p>
+
+        <p id="b"> bbbbbb </p>
+
+        <p id="c"> ccccccc </p>
+
+        <article>
+            <!--  formulaire du contact html envoie vers contact.html  -->
+            <h2>formulaire de contact</h2>
+            <form action="contact.html" name="contact" id="contact">
+
+                genre
+                <input type="radio" name="genre" value="F" />Femme
+                <input type="radio" name="genre" value="M" /> Homme<br /> nom
+                <input type="text" name="nom" />
+                <br /> prénom <input type="text" name="prenom" />
+                <br /> ecole <input type="checkbox" name="ecole[]" value="greta" />Greta
+                <input type="checkbox" name="ecole[]" value="universite" />universite
+                <br /> ville <select name="ville">
+                            <option>Noisy le grand</option>
+                            <option>Paris</option>
+                            <option>Nancy</option>
+                            <option>Créteil</option>
+                        </select>
+                <br> Message <textarea name="message"></textarea>
+                <br> email <input type="mail" name="mail">
+                <br> telephone <input type="tel" name="tel">
+                <br>
+                <input type="submit" value="OK">
+                <button>Envoyer</button>
+            </form>
+        </article>
+        <!-- listes -->
+        <section>
+            <h2>Types des liste HTML</h2>
+
+            <ul>
+                <li>Paris</li>
+                <li>Marseille</li>
+                <li>Lyon</li>
+            </ul>
+
+            <ol>
+                <li>Paris</li>
+                <li>Marseille</li>
+                <li>Lyon</li>
+            </ol>
+
+            <ul>
+                <li>Paris
+
+                    <ol>
+                        <li>Paris 1
+                            <ul>
+                                <li>rue 1</li>
+                                <li>rue 2</li>
+                                <li>rue 3</li>
+                            </ul>
+
+                        </li>
+                        <li>Paris 2</li>
+                        <li>Paris 3</li>
+                    </ol>
+
+                </li>
+                <li>Marseille
+                    <ul>
+                        <li>rue 1</li>
+                        <li>rue 2</li>
+                        <li>rue 3</li>
+                    </ul>
+                </li>
+                <li>Lyon</li>
+            </ul>
+        </section>
+
+        <!-- tableaux -->
+        <table border="1">
+            <!-- entete du tableaux -->
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                </tr>
+            </thead>
+            <!-- le corps du tableaux -->
+            <tbody>
+                <tr>
+                    <td>BOUHARIRA</td>
+                    <td>Naïma</td>
+                </tr>
+                <tr>
+                    <td>ELOISE</td>
+                    <td>Kurtys</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+        <center>
+            dwwm 2020-2021
+        </center>
+    </footer>
+</body>
+
+</html>

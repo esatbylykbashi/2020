@@ -1,0 +1,51 @@
+/*
+nom des balises
+*/
+
+body {
+    background-color: bisque;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+main {
+    background-color: darkkhaki;
+}
+
+hr {
+    color: red;
+}
+
+
+/*
+id
+un id commence toujours par un #
+*/
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+#google {
+    width: 50px;
+}
+
+#b {
+    background-color: darkmagenta;
+    color: white;
+}
+
+
+/*
+class
+une class commence toujours par un .
+*/
+
+.rouge {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}

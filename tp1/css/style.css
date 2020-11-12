@@ -1,0 +1,58 @@
+body {
+    background-color: beige;
+}
+
+article {
+    background-color: blueviolet;
+    border: 2px solid;
+    border-color: blue;
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.logo {
+    width: 200px;
+    margin-right: 30px;
+}
+
+a {
+    color: green;
+    background-color: greenyellow;
+}
+
+th {
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+}
+
+td {
+    background-color: azure;
+    color: blue;
+}
+
+header {
+    background-color: brown;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 100px;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+body>ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+    background-color: burlywood;
+}
+
+body>ul li {
+    flex-grow: 1;
+}

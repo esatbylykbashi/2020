@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.btn-negatif {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.dark #h1 {
+    color: white;
+}
+
+.dark .btn {
+    color: black;
+    background-color: white;
+}
+
+body.dark {
+    background-color: black;
+}
+
+.div-principal {
+    display: inline-block;
+}
+
+.menu {
+    display: block;
+    text-decoration: none;
+    padding: 8px 10px;
+}
+
+.div-menu {
+    margin-top: 2px;
+    background: black;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    display: none;
+    position: absolute;
+    min-width: 300px;
+}
+
+.afficher-message {
+    background-color: rgba(250, 248, 245);
+    text-align: center;
+    max-width: 100%;
+    width: 600px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 4px rgb(87, 85, 83);
+    transform: translateY(-100vh);
+    transition: 2s;
+}
+
+.modale {
+    border: none;
+    background-color: rgb(19, 19, 204);
+    box-shadow: 0px 0px 3px 3px rgb(139, 192, 139);
+    padding: 8px 15px;
+    color: red;
+}

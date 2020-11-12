@@ -1,0 +1,13 @@
+.btn_valider {
+    background-color: rgb(36, 128, 0);
+    color: #1bce24;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 2px;
+}
+
+.btn_annuler {
+    background-color: gray;
+}

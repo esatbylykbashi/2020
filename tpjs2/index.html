@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/fonctions.js"></script>
+    <script src="js/conditions_if.js"></script>
+    <script src="js/conditions_switch.js"></script>
+</head>
+
+<body>
+    <button onclick="alert('button');"> Hello</button>
+    <button onclick="maF2(10,20);"> addition 200+300</button>
+    <button onclick="maF3(50,100);"> addition 5+10</button>
+    <button onclick="maFonction();"> maFonction</button>
+
+
+
+
+    <script>
+        /** je declare des variables
+         *  var permet de declarer une variable 
+         *  ensuite espace puis le nom de la variable = permet d'alimanter la variable ensuite la valeur
+         */
+        var ma_variable = 2; // type int (numérique)
+        var maAutreVariable = "text"; // type string (chaine de caractères)
+
+        var a = 5,
+            b = "5",
+            c = 10;
+
+        var d = a + b;
+
+
+        var t = true; // vrais ou 1
+        var f = false; //faux ou 0
+
+        var test1;
+        var test2 = null;
+        var test3 = 3 * "a";
+
+        /*
+            alert(test1); // undefined
+            alert(test2); //null
+            alert(test3); // NaN
+        */
+
+        /*
+         Javascript permet de faire aussi du mathematique         * 
+         */
+        var mat = a + (5 * c) + 3;
+        var add = 10 + 5;
+        var sou = 10 - 10;
+        var mul = 10 * 5;
+        var div = 10 / 5;
+        var mod = 10 % 3;
+
+        var pours = (10 * 100) / 10;
+
+        //   alert(mat);
+
+        /*
+        Je declare une variable 'formulaire' et j'alimente par la fonction
+        native du javascript confirm().
+        Cette fonction ouvre une fenetre avec un message et nous affiche 2 boutons
+        OK qui retourn 'true' et Annuler qui retourne 'false'
+        donc la fonction confirme() retourn true ou false (vrais ou faux)
+        La variable 'formulaire' recupere true ou false
+        true = vrais
+        false = faux
+        
+        var formulaire = confirm("Valider ce fomrulaire?");
+        alert(formulaire);
+*/
+        /*
+        Je declare une variabe 'age' que j'alimente par la focntion
+        native du javascript prompt().
+        Cette fonction comme la fonction confirme() ouvre une fenetre et
+        un message et nous affiche 2 boutons et un champ text dans le
+        quelle nous demande ajouter une valeur
+        la variable 'age' recupere la valeur du champs du prompt();
+        OK = la valeur du champs
+        Annuler = null
+       
+        var age = prompt("quelle est votre age :");
+        alert("Vous avez :" + age + "ans");
+ */
+        /*
+        je compbine les 3 fonctions du js 
+        confirm(), prompt() et alert()
+        */
+        /*
+         var nom = prompt("Quelle est votre nom ?");
+         var age = prompt("Votre age ?");
+         var confirmeNomAge = confirm("Votre nom est : " + nom + " et vous avez " + age + " ans ?");
+
+         alert(confirmeNomAge);
+         */
+    </script>
+</body>
+
+</html>

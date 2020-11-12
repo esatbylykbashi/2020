@@ -1,0 +1,160 @@
+    .header {
+        width: 100%;
+        display: flex;
+        background: turquoise;
+    }
+    
+    .header>div {
+        background: violet;
+        margin: 5px;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .articles {
+        display: flex;
+        background: turquoise;
+    }
+    
+    .articles>div {
+        margin: 10px;
+        background: blanchedalmond;
+    }
+    
+    .flex-right {
+        display: flex;
+        justify-content: flex-end;
+        background-color: blueviolet;
+    }
+    
+    .flex-right>div {
+        margin: 2px;
+        padding: 10px;
+        font-size: 20px;
+        background: blanchedalmond;
+    }
+    
+    .flex-left {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        background-color: cadetblue;
+    }
+    
+    .flex-left>div {
+        margin: 2px;
+        padding: 10px;
+        font-size: 20px;
+        background: blanchedalmond;
+    }
+    
+    nav>ul {
+        margin: 0;
+        padding: 10px;
+        list-style-type: none;
+        background-color: grey;
+        font-size: 16px;
+        font-family: Arial;
+    }
+    
+    nav>ul>li {
+        display: inline;
+        padding: 10px;
+        color: white;
+    }
+    
+    nav>ul>li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav>ul>li a:hover {
+        padding: 10px;
+        background-color: black;
+    }
+    
+    nav>ul>li a:active {
+        padding: 10px;
+        background-color: green;
+    }
+    
+    nav>ul>li a:visited {
+        padding: 10px;
+        background-color: red;
+    }
+    
+    .block {
+        border: 5px black solid;
+        width: 800px;
+        height: 600px;
+        margin: auto;
+        background-color: blanchedalmond;
+    }
+    
+    .relative {
+        position: relative;
+        top: 200px;
+        left: 100px;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        color: white;
+    }
+    
+    .absolute {
+        position: absolute;
+        right: 100px;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        color: white;
+    }
+    
+    .fixed {
+        position: fixed;
+        left: 100px;
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+        background-color: seagreen;
+        color: white;
+    }
+    
+    .sticky {
+        position: sticky;
+        left: 100px;
+        top: 200px;
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+        color: white;
+    }
+    
+    @media screen and (max-width:800px) and (min-width:600px) {
+        body {
+            background-color: black;
+        }
+        nav {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width:600px) {
+        .articles {
+            flex-direction: column;
+        }
+        .articles>div {
+            background: blue;
+            color: white;
+        }
+        body {
+            background-color: tomato;
+        }
+        nav>ul {
+            flex-direction: column;
+        }
+        .fixed {
+            position: static;
+        }
+    }

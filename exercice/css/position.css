@@ -1,0 +1,91 @@
+.block {
+    margin-top: 200px;
+    margin-bottom: 300px;
+    max-height: 600px;
+    min-height: 500px;
+    border: gray 5px solid;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.t-100x100 {
+    height: 100px;
+    width: 100px;
+}
+
+.f-top-left {
+    position: fixed;
+    background-color: red;
+    top: 0;
+    left: 0;
+}
+
+.f-top-right {
+    position: fixed;
+    background-color: red;
+    top: 0;
+    right: 0;
+}
+
+.f-bottom-left {
+    position: fixed;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+}
+
+.f-bottom-right {
+    position: fixed;
+    background-color: red;
+    bottom: 0;
+    right: 0;
+}
+
+.a-top-left {
+    position: absolute;
+    background-color: green;
+    top: 0;
+    left: 100px;
+}
+
+.a-bottom-right {
+    position: absolute;
+    background-color: green;
+    top: 720px;
+    right: 0;
+}
+
+.r-top-right {
+    position: relative;
+    background-color: blue;
+    top: 0;
+    float: right;
+}
+
+.r-bottom-left {
+    position: relative;
+    background-color: blue;
+    top: 400px;
+}
+
+.block2 {
+    height: 300px;
+    background-color: indigo;
+}
+
+.sticky {
+    position: sticky;
+    left: 300px;
+    top: 0;
+    background-color: gray;
+    color: white;
+}
+
+.max {
+    width: 120%;
+    border: indigo 2px solid;
+}
+
+span {
+    color: red;
+}

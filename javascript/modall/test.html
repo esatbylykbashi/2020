@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="test.css">
+    <script src="jquery-3.4.1.js"></script>
+
+    <script src="test.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="modall" onclick="oShow('.fenetre');">bouton</button>
+    <button class="modall" onclick="oShow('#test');">affiche texte</button>
+    <div class="fenetre">
+
+        <div class="contener">
+            <h1>Titre</h1>
+            <p>BIENVENUE</p>
+            <textarea placeholder="Ecrivez ce que vous voulez!"></textarea>
+            <button class="ferme_modall" onclick="fFJquery();">Quitter</button>
+
+        </div>
+    </div>
+    <img src="10.jpg" />
+    <div id="test" style="display: none;">
+
+
+        texte caché
+    </div>
+
+    <script>
+        document.querySelector('.fenetre').style.display = 'none';
+    </script>
+</body>
+
+</html>

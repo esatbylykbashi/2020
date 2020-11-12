@@ -1,0 +1,36 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-family: collegiate;
+    display: block;
+    background-color: #dddddd;
+    border: 3px solid black;
+    text-decoration: none;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+a {
+    font-family: collegiate;
+    text-decoration: none;
+}
+
+li a:hover {
+    font-family: col;
+    display: block;
+    background-color: #2439f1;
+    border: 3px solid red;
+    color: white;
+    margin: 5px;
+    padding: 8px;
+}

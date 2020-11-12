@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inscription</title>
+
+    <script src="inscription.js"></script>
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <h1>Inscription</h1>
+    <hr>
+    <div id="message"></div>
+    <br>
+    <form name="inscription" action="inscription.php" onsubmit="return validateForm('inscription')" method="post">
+        age : <input type="number" name="age">
+        <br> nom : <input type="text" name="nom" required placeholder="votre nom">
+        <br> prenom : <input type="text" name="prenom">
+        <br> mail : <input type="email" name="mail">
+        <br> MdP : <input type="password" name="mdp">
+        <br> MdP confirm : <input type="password" name="mdpConfirm">
+
+        <br> tel : <input type="tel" name="tel">
+        <br> ville :
+        <select name="ville">
+                    <option value="paris">paris</option>
+                    <option value="marseille">marseille</option>
+            </select>
+        <br>
+        <input type="checkbox" name="ppp[]" value="a">
+        <input type="checkbox" name="ppp[]" value="b">
+
+
+        <input type="submit" value="Envoyer">
+
+
+
+    </form>
+</body>
+
+</html>
