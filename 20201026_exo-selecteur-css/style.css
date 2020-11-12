@@ -1,0 +1,15 @@
+main#content>article.product>section div:first-of-type {
+    background-color: green;
+}
+
+#content>article.product>section div:first-child {
+    background-color: hotpink !important;
+}
+
+main#content>article.product>section>div:first-child {
+    color: red;
+}
+
+nav.menu>ul>li:last-child {
+    background-color: grey;
+}
