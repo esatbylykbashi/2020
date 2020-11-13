@@ -40,7 +40,7 @@
             </section>
             <section>
                 <h2><span class="fas fa-money-check"></span> Transactions</h2>
-                <table>
+                <table class="transaction">
                     <thead>
                         <th>Date</th>
                         <th>Libelle</th>
@@ -56,7 +56,7 @@
                     <input type="text" name="date" id="date" placeholder="Date" />
                     <input type="text" name="libelle" id="libelle" placeholder="Libellé">
                     <input type="text" name="montant" id="montant" placeholder="Montant">
-                    <button class="calculer">Ajouter <span class='fas fa-plus'></span></button>
+                    <button class="calculer" onclick="ajouteTransaction(event, 'monCompte')">Ajouter <span class='fas fa-plus'></span></button>
                 </form>
             </section>
         </article>
@@ -83,7 +83,7 @@
             </section>
             <section>
                 <h2><span class="fas fa-money-check"></span> Transactions</h2>
-                <table>
+                <table class="transaction">
                     <thead>
                         <th>Date</th>
                         <th>Libelle</th>
@@ -99,7 +99,7 @@
                     <input type="text" name="date" id="date" placeholder="Date" />
                     <input type="text" name="libelle" id="libelle" placeholder="Libellé">
                     <input type="text" name="montant" id="montant" placeholder="Montant">
-                    <button class="calculer">Ajouter <span class='fas fa-plus'></span></button>
+                    <button class="calculer" onclick="ajouteTransaction(event, 'compteJeanArchibald')">Ajouter <span class='fas fa-plus'></span></button>
                 </form>
             </section>
         </article>

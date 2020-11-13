@@ -81,3 +81,53 @@ function calculePrevision(event, cible) {
 
     affichePrevision(compte, cible);
 }
+
+/**
+ * Fonction qui permet d'ajouter une transaction dans le 
+ * tableau.
+ * 
+ * @param {*} event 
+ * @param {string} cible 
+ */
+function ajouteTransaction(event, cible) {
+    if (event) event.preventDefault();
+
+    var transaction = getTransactionInfos(cible);
+    var date = transaction[0];
+    var libelle = transaction[1];
+    var montant = transaction[2];
+
+    ajouteLigneTransaction(cible, date, libelle, montant);
+
+}
+
+/**
+ * Renvoie un tableau des données nécessaires à la transaction.
+ * 
+ * @param {string} cible 
+ * @returns {Array} Tableau qui contient [date, libelle, montant]
+ */
+function getTransactionInfos(cible) {
+    var date = document.querySelector("article#" + cible + " form>input#date").value;
+
+    var libelle = document.querySelector("article#" + cible + " form>input#libelle").value;
+
+    var montant = document.querySelector("article#" + cible + " form>input#montant").value;
+    montant = parseFloat(montant);
+
+    return [date, libelle, montant];
+}
+
+/**
+ * Ajoute une ligne dans le tableau des transactions de la cible.
+ * 
+ * @param {string} cible 
+ * @param {string} date 
+ * @param {string} libelle 
+ * @param {number} montant 
+ */
+function ajouteLigneTransaction(cible, date, libelle, montant) {
+    var ligne = "<tr><td>" + date + "</td><td>" + libelle + "</td><td class='euro'>" + montant + "</td></tr>";
+    var table = document.querySelector("article#" + cible + ">section>table.transaction");
+    table.innerHTML += ligne;
+}
