@@ -4,20 +4,21 @@
  * 
  * @returns {Array} Tableau des informations [total, salaire, duree]
  */
-function getCalculInfos() {
+function getCalculInfos(cible) {
     var total = document.querySelector(
-        "main>article>section:first-of-type>h3>span"
+        "main>article#" + cible + ">section:first-of-type>h3>span"
     ).innerHTML;
-    // 
+    // parse float transforme une chaine de caractère en number
+    // si la chaine a une "virgule" (nombre décimal)
     total = parseFloat(total);
 
     var salaire = document.querySelector(
-        "form.calcul>input#salaire"
+        "article#" + cible + " form.calcul>input#salaire"
     ).value;
     salaire = parseFloat(salaire);
 
     var duree = document.querySelector(
-        "form.calcul>input#duree"
+        "article#" + cible + " form.calcul>input#duree"
     ).value;
     duree = parseInt(duree);
 
@@ -30,9 +31,9 @@ function getCalculInfos() {
  * 
  * @param {number} montantPrevisionnel 
  */
-function affichePrevision(montantPrevisionnel) {
+function affichePrevision(montantPrevisionnel, cible) {
     champResultat = document.querySelector(
-        "form.calcul+h3>span"
+        "article#" + cible + " form.calcul+h3>span"
     ).innerHTML = montantPrevisionnel;
 }
 
@@ -68,14 +69,15 @@ function paieSalairePendantDuree(compte, salaire, duree) {
  * informations entrées par l'utilisateur dans le
  * formulaire.
  */
-function calculePrevision(event) {
+function calculePrevision(event, cible) {
     if (event) event.preventDefault();
-    var infos = getCalculInfos();
+
+    var infos = getCalculInfos(cible);
     var total = infos[0];
     var salaire = infos[1];
     var duree = infos[2];
 
     var compte = paieSalairePendantDuree(total, salaire, duree);
 
-    affichePrevision(compte);
+    affichePrevision(compte, cible);
 }
