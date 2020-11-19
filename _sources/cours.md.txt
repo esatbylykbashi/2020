@@ -30,13 +30,16 @@
 
 #### si vrai (true)
 
-* if (a == b) {
-* alert("vrais a == b");
-* } else if (c === d) {
-* alert("vrais c == d");
-* } else {
-* alert("faux");
-* }## Jeudi 2020/10/29
+```
+if (a == b) {
+  alert("vrais a == b");
+} else if (c === d) {
+  alert("vrais c == d");
+} else {
+  alert("faux");
+}
+```
+## Jeudi 2020/10/29
 
 ### Javascript conditions SWITCH
 
