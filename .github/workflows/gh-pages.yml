@@ -37,11 +37,11 @@ jobs:
           pip3 install sphinx sphinx-rtd-theme recommonmark
 
       - name: "Generate cours.md"
-        run: cat cours/* > cours.md
+        run: cat docs/cours/* > docs/cours.md
 
       - name: "Build Sphinx Doc"
         run: |
-          make html
+          cd docs && make html
 
       # 3. Déploiement sur les Github Pages
 
