@@ -1,0 +1,39 @@
+## Mercredi 2020/10/28
+
+### Javascript conditions IF
+
+#### decouverte des conditions IF  et exercices
+
+ * if
+
+ * else if
+
+ * else
+
+ * == compare la valeur
+
+ * === compare la valeure et le type (string ou int) 
+
+ * \> superieur
+
+ * < inferieur
+
+ * `>=` superieur ou egal
+
+ * <= inferieur ou egal
+
+ * != different de
+
+ * && et
+
+ * || ou
+
+#### si vrai (true)
+
+* if (a == b) {
+* alert("vrais a == b");
+* } else if (c === d) {
+* alert("vrais c == d");
+* } else {
+* alert("faux");
+* }

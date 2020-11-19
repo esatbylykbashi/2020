@@ -1,0 +1,13 @@
+## Mardi 2020/11/10
+
+### Javascript TP Boutique
+
+Nous avons crée un projet BOUTIQUE pour faire des exercices HTML,CSS et JS
+
+Le projet à pour but de mettre en place tous ce que nous avons fait depuis le debut des cours.
+
+* HTML, creation en respectent de la structure HTML
+* CSS, mise en place des styles dans tous le projet
+* JS, creation des variable des fonctions, des tables, conditions et leurs utlisation, 
+
+La structure HTML et CSS est realiser par tous le groupe le jour meme

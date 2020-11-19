@@ -1,0 +1,15 @@
+## Lundi 2020/11/02
+
+### Javascript boucle FOR
+
+boucle FOR et exercices
+
+parametre 1  i=0 on commance la boucle par 0
+parametre 2  tant que i <= 10 continue la boucle
+c++ ancremante la variable i par 1  
+
+```
+for (i = 1; i <= 10; i++) {
+  console.log(i);
+}
+```

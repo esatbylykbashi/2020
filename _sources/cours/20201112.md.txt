@@ -1,0 +1,17 @@
+## Jeudi 2020/11/12
+
+### Exercice pour comprendre les tableaux
+
+Ecrire une liste d'élèves dans un tableau javascript et l'écrire sous forme de liste html grâce à une boucle for.
+
+Puis ajouter un bouton qui trie la liste par ordre alphabétique et qui la réaffiche.
+
+Pour ne pas dupliquer le code on utilise une fonction !
+
+### Travail sur les commentaires dans le code
+
+### Reprise du TP banque
+
+Adapter le code du formateur qui ne marche que pour le premier compte, pour qu'il marche pour les 2 comptes !
+
+**Sans faire de copier coller**

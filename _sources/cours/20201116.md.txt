@@ -1,0 +1,6 @@
+## Lundi 2020/11/16
+
+### Javascript TP Boutique
+
+Nous avons continuer sur le projet BOUTIQUE en integrent le JS
+Creation des fonction et les tableau et execution à partir du HTML

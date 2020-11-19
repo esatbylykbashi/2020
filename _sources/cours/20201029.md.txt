@@ -1,0 +1,27 @@
+## Jeudi 2020/10/29
+
+### Javascript conditions SWITCH
+
+decouverte des conditions SWITCH et exercices
+la condition switch à pour parametre 
+une valeur ou une variable entre les () 
+et elle fonctionne par des case (cas)
+le break; permet de stoper le cas si la
+valeur ce trouve das se cas 
+
+* var a = 5;
+
+* switch (a) {
+* case "admin":
+* alert("switch votre role est admin");
+* break;
+* case 5:
+* case 6:
+* 
+* alert("switch la valeur est 5");
+* break;
+* default:
+* alert("switch rien");
+* }
+
+## 

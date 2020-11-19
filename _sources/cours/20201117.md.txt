@@ -1,0 +1,26 @@
+## Mardi 2020/11/17
+
+### Javascript TP Boutique
+
+Nous avons continuer sur le projet BOUTIQUE en integrent le JS
+Creation des fonctions, les condition, les boucles et les tableaux et execution à partir du HTML
+
+### Javascript Objet
+
+Decouverte des Objet
+un objet contient des propriétés et des méthodes :
+
+```javascript
+var car = { 
+  type:"Fiat",// propriété : "valeur"
+  model:"500", // propriété : "valeur"
+  color:"white",// propriété : "valeur"
+  nomComplet : function() { return this.type + " " + this.model; } // Methode
+};
+```
+
+pour appeler un une propriété dans l'objet car on appel la variable suivie d'un point suivie du nom de propriété
+
+```javascript
+car.model;
+```
