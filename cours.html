@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mercredi 2020/10/28 &#8212; Documentation Cours Greta DWWM93 2020 1.0</title>
+    <title>Cours TP DWWM &#8212; Documentation Cours Greta DWWM93 2020 1.0</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -33,12 +33,243 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="mercredi-2020-10-28">
-<h1>Mercredi 2020/10/28<a class="headerlink" href="#mercredi-2020-10-28" title="Lien permanent vers ce titre">¶</a></h1>
+  <div class="section" id="cours-tp-dwwm">
+<h1>Cours TP DWWM<a class="headerlink" href="#cours-tp-dwwm" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="mardi-2020-10-06">
+<h2>Mardi 2020/10/06<a class="headerlink" href="#mardi-2020-10-06" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p>création des répertoires « Code/greta » pour stocker correctement son code</p></li>
+<li><p>présentation formation:</p>
+<ul>
+<li><p>objectifs de la formation</p></li>
+<li><p>front / back</p></li>
+<li><p>langages de programmation</p></li>
+</ul>
+</li>
+<li><p>présentation vscode</p>
+<ul>
+<li><p>notamment Emmet (avec « lorem » etc. pour l”aide au développement) qui est intégré à vscode</p></li>
+</ul>
+</li>
+<li><p>présentation html / css / javascript</p></li>
+</ul>
+<div class="section" id="er-projet-rapide">
+<h3>1er projet rapide<a class="headerlink" href="#er-projet-rapide" title="Lien permanent vers ce titre">¶</a></h3>
+<ul class="simple">
+<li><p>index.html =&gt; choisi parce que c”est la norme des pages d”accueil</p></li>
+<li><p>balises standard : html, head, body, main, article, section, h1, h2, h3 …</p></li>
+<li><p>tests du style en changeant dynamiquement le style dans la console développeur du navigateur</p></li>
+</ul>
+<p>En live j”ai fait un <code class="docutils literal notranslate"><span class="pre">Code/greta/first/index.html</span></code> aussi, de qualité médiocre pour jouer avec ce qu”il est possible de faire.</p>
+</div>
+<div class="section" id="presentation-projet-du-formateur">
+<h3>Présentation projet du formateur<a class="headerlink" href="#presentation-projet-du-formateur" title="Lien permanent vers ce titre">¶</a></h3>
+<p>J”ai montré vite fait ma page de mariage, mais surtout j”ai codé devant eux en une trentaine de minutes la page « trombi.html » dans le dossier « Code/greta/first », avec bootstrap / material design / des placeholder / du javascript etc.</p>
+<p>Ressources :</p>
+<ul class="simple">
+<li><p><a class="reference external" href="picsum.photos">placeholder photos</a></p></li>
+<li><p><a class="reference external" href="http://avatars.adorable.io">placeholder avatars</a></p></li>
+<li><p><a class="reference external" href="https://mdbootstrap.github.io/bootstrap-material-design/docs/4.0/bootstrap-components/alerts/">bootstrap4 + material design</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="lundi-2020-10-12">
+<h2>Lundi 2020/10/12<a class="headerlink" href="#lundi-2020-10-12" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="selecteurs-css">
+<h3>Selecteurs CSS<a class="headerlink" href="#selecteurs-css" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Ecrire un menu en haut de sa page : probleme avec les block et les inline. (on ne s”apesantit pas sur le sujet, on laisse juste galérer suffisamment pour qu”ils comprennent que ça marche pas top)</p>
+<p>NB : Si on veut que le lien en haut de la page prenne tout l”élément il faut jouer avec <a class="reference external" href="https://stackoverflow.com/questions/40755950/make-a-tag-to-take-100-height-of-inline-block-parent">« line-height »</a></p>
+</div>
+<div class="section" id="flexbox">
+<h3>flexbox<a class="headerlink" href="#flexbox" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Introduction à flexbox, <a class="reference external" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">resource ici</a>, qui permet de la mise en page (sur 1 dimension) de façon très très simple.</p>
+<p>On a repris l”exemple précédent, et à la fin on se rend compte qu”il suffit que le parent soir <code class="docutils literal notranslate"><span class="pre">display:</span> <span class="pre">flex;</span></code> pour que directement les enfants s”alignent sur une même ligne de manière propre.</p>
+<p>On a vu comment on les aligne sur l”axe principal (ici horizontal) et sur l”axe secondaire (donc l”axe vertical), avec les propriétés qui se terminent par « -content » (pour l”axe principal) et « -items » pour l”axe secondaire. Tout marche pareil si mon axe principal devient l”axe vertical. (ie <code class="docutils literal notranslate"><span class="pre">flex-direction:column;</span></code>)</p>
+<p>On l”a appliqué sur un TP2 qui consiste à écrire une page d”un journal, avec un bandeau de navigation, une section centrale qui contient 3 articles en colonne côte à côte, puis une section « contact » qui contient du texte et un formulaire, et enfin un footer.</p>
+</div>
+</div>
+<div class="section" id="mardi-2020-10-13">
+<h2>Mardi 2020/10/13<a class="headerlink" href="#mardi-2020-10-13" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Poursuite du TP2 avec révision de flexbox, et des balises les plus courantes (ex: input avec placeholder).</p>
+<p>Notamment on appuyé sur comment faire des liens dans la page (et le rôle des « id »).</p>
+<div class="section" id="id1">
+<h3>flexbox<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Attention : un élément flexbox ne peut gérer que ses enfants directs, pas ses petits enfants ou arrière petits enfants. On a insisté sur ce point.</p>
+<p>Quitte, pour plus de mise en page, à ce que les enfants deviennent eux mêmes des éléments flexbox et qu”ils gèrent leurs propres enfants.</p>
+</div>
+<div class="section" id="id2">
+<h3>selecteurs CSS<a class="headerlink" href="#id2" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Révision de comment fonctionnent les selecteurs CSS, comment on les manipule, qu”il faut être le plus précis possible pour ne pas modifier des éléments qu”on ne veut pas modifier, et qu”il faut limiter le nombre d”id et de class, qui ne doivent servir qu”en dernier recours.</p>
+<p>En effet, il vaut mieux éviter d”avoir à changer le code html quand on veut changer un style, il vaut mieux changer juste le css. (exemple: rajouter un élément dans ma barre de nav, sans avoir à lui donner la bonne classe ! mon selecteur CSS est fait de manière à le prendre de toute façon ! au pire on met juste l”id sur le parent « nav »)</p>
+<p>En + : découverte des selecteurs</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">:hover</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:last-child</span></code></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="jeudi-2020-10-15">
+<h2>Jeudi 2020/10/15<a class="headerlink" href="#jeudi-2020-10-15" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Poursuite du Flexbox et decouvert du responsive &#64;media</p>
+<ul>
+<li><p>découverte de la balise DIV et SPAN</p>
+<ul>
+<li><div> est une balise du type BLOCK et elle est fermante </div></li>
+<li><p><span> est une balise du type INLINE et elle est fermante </span></p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="id3">
+<h3>flexbox<a class="headerlink" href="#id3" title="Lien permanent vers ce titre">¶</a></h3>
+<p>travail sur TPFlex, utilisation des display, flex-wrap, flex-direction.</p>
+</div>
+<div class="section" id="media">
+<h3>&#64;media<a class="headerlink" href="#media" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Changement du style CSS en au chamgement du taille de l”ecran</p>
+<ul>
+<li><p>&#64;media (max-width: 600px) {</p></li>
+<li><p>h1 {</p></li>
+<li><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   <span class="n">display</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
+</pre></div>
+</div>
+</li>
+<li><p>}</p></li>
+<li><p>}</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="vendredi-2020-10-16">
+<h2>Vendredi 2020/10/16<a class="headerlink" href="#vendredi-2020-10-16" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Découverte des parametres</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">display</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">padding</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">margin</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">border</span></code></p></li>
+</ul>
+<div class="section" id="id4">
+<h3>&#64;media<a class="headerlink" href="#id4" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Poursuite du TPFlex en responsive</p>
+</div>
+<div class="section" id="positions">
+<h3>Positions<a class="headerlink" href="#positions" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Découverte du parametre position et urilisation dasn le fichier position.html et position.css</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">static</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">relative</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fixed</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">absolute</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sticky</span></code></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="lundi-2020-10-19">
+<h2>Lundi 2020/10/19<a class="headerlink" href="#lundi-2020-10-19" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Creation d”un CV à partir d”un model, en utilisent le html et CSS.
+Tous le code demandé pour créee le CV est déjà expliquer dans les cours precedent.
+Le CV doit etre responsive.
+Le model du CV est ajouter sur SLACK en IMAGE
+A la fin de journé le code est aussi envoyé sur SLACK</p>
+</div>
+<div class="section" id="mardi-2020-10-20">
+<h2>Mardi 2020/10/20<a class="headerlink" href="#mardi-2020-10-20" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le matin, on continue sur le CV, explication du code du model.
+Hierarchie des balises.</p>
+<div class="section" id="macquetter-une-application">
+<h3>Macquetter une application<a class="headerlink" href="#macquetter-une-application" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Nous avons devouvert le maquettage et disquter des 4 etapes de maquettage
+Photo mis sur SLACK</p>
+<ul class="simple">
+<li><p>Zonning</p></li>
+<li><p>Wireframe</p></li>
+<li><p>Mockup</p></li>
+<li><p>Prototype</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="mercredi-2020-10-21">
+<h2>Mercredi 2020/10/21<a class="headerlink" href="#mercredi-2020-10-21" title="Lien permanent vers ce titre">¶</a></h2>
+<p>On reprend zoning / wireframe , et on apprend la distinction UX (plutot zoning/wireframe) / UI (plutôt mockup/prototype).</p>
+<p>TP zoning / wireframe pour leur CV, sur diagrams.net.</p>
+<p>Les questions portent sur les choix effectués en terme d”UX (pourquoi tel élément est là,pourquoi il fait cette taille …) et sur les adaptations responsive.</p>
+<p>Présentation d”éléments de design « standards », comme les règles proposées par le material design.</p>
+<p>On a vu également quelques exemples de sites avec un bon UX/UI et d”autres catastrophiques.</p>
+</div>
+<div class="section" id="jeudi-2020-10-22">
+<h2>Jeudi 2020/10/22<a class="headerlink" href="#jeudi-2020-10-22" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Retour sur les wireframes et réalisation des mockups.</p>
+<div class="section" id="print-css">
+<h3>Print CSS<a class="headerlink" href="#print-css" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Faire une version du css adaptée à l”impression pour générer un CV imprimé.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://developer.mozilla.org/fr/docs/CSS/Premiers_pas/M%C3%A9dias#Impression">explication macro sur le site de mozilla</a></p></li>
+</ul>
+</div>
+<div class="section" id="todo">
+<h3>TODO<a class="headerlink" href="#todo" title="Lien permanent vers ce titre">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jgthms.com/web-design-in-4-minutes/">web design in 4 minutes</a></p></li>
+<li><p><a class="reference external" href="https://www.internetingishard.com/html-and-css/">interneting is hard</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="lundi-2020-10-26">
+<h2>Lundi 2020/10/26<a class="headerlink" href="#lundi-2020-10-26" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Réalisation du site web pour le cv dont on avait fait le zoning, le wireframe et le mockup.</p>
+<p>Obligation d”utiliser un positionnement fixed ou sticky pour le menu, et obligation de faire un site responsive.</p>
+<p>Ceux qui ont eu le temps on essayé de faire une media query « print » que l”on peut voir en utilisant l”impression par chrome.</p>
+<div class="section" id="id5">
+<h3>Sélecteurs CSS<a class="headerlink" href="#id5" title="Lien permanent vers ce titre">¶</a></h3>
+<p>exo « inversé »: à partir du sélecteur CSS proposer une arborescence HTML qui convient.</p>
+<p>La subtilité s”est trouvée notamment dans le fait d”utiliser l”espace dans le sélecteur, et donc tous les enfants, petits enfants etc. se retrouvaient sélectionnés. Il fallait penser à ce cas là.</p>
+</div>
+</div>
+<div class="section" id="mardi-2020-10-27">
+<h2>Mardi 2020/10/27<a class="headerlink" href="#mardi-2020-10-27" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="javascript">
+<h3>Javascript<a class="headerlink" href="#javascript" title="Lien permanent vers ce titre">¶</a></h3>
+<ul class="simple">
+<li><p>définition vs exécution</p></li>
+<li><p>définition de :</p>
+<ul>
+<li><p>variables : <code class="docutils literal notranslate"><span class="pre">var</span> <span class="pre">maVariable</span> <span class="pre">=</span> <span class="pre">2</span></code></p></li>
+<li><p>fonctions : <code class="docutils literal notranslate"><span class="pre">function</span> <span class="pre">maFonction</span> <span class="pre">(argument1)</span> <span class="pre">{var</span> <span class="pre">resultat</span> <span class="pre">=</span> <span class="pre">traitement();</span> <span class="pre">return</span> <span class="pre">resultat;}</span></code></p></li>
+</ul>
+</li>
+<li><p>utilisation de la console du navigateur pour tester son code javascript</p></li>
+</ul>
+<div class="section" id="fonction">
+<h4>Fonction<a class="headerlink" href="#fonction" title="Lien permanent vers ce titre">¶</a></h4>
+<p>C”est une boîte noire avec des entrées et une sortie.</p>
+</div>
+</div>
+<div class="section" id="typage-variables">
+<h3>Typage variables<a class="headerlink" href="#typage-variables" title="Lien permanent vers ce titre">¶</a></h3>
+<ul class="simple">
+<li><p>string</p></li>
+<li><p>number</p></li>
+<li><p>array</p></li>
+</ul>
+<p>On n”a pas vu les objets !! et c”est fait exprès :-)</p>
+</div>
+<div class="section" id="commenter-son-code">
+<h3>Commenter son code !<a class="headerlink" href="#commenter-son-code" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Indispensable ! surtout pour les fonctions javascript.</p>
+</div>
+<div class="section" id="modification-du-html">
+<h3>Modification du html<a class="headerlink" href="#modification-du-html" title="Lien permanent vers ce titre">¶</a></h3>
+<ol class="simple">
+<li><p>on sélectionne l”élément à modifier grâce à un sélecteur CSS <em>qu”on connaît déjà</em>, et grâce aux fonctions <code class="docutils literal notranslate"><span class="pre">document.querySelector(&quot;selecteur&gt;css.complique:first-child&quot;)</span></code>(pour récupérer le premier élément trouvé) et  <code class="docutils literal notranslate"><span class="pre">document.querySelectorAll(&quot;selecteur&gt;css.complique:first-child&quot;)</span></code> (pour récupérer tous les éléments qui correspondent)</p></li>
+<li><p>une fois récupéré dans une variable « elementHtml » (par exemple) on modifie <code class="docutils literal notranslate"><span class="pre">elementHtml.innerText</span> <span class="pre">=</span> <span class="pre">&quot;TOTOTATATITI&quot;</span></code> ou <code class="docutils literal notranslate"><span class="pre">elementHtml.InnerHTML</span> <span class="pre">=</span> <span class="pre">&quot;&lt;h2&gt;Un</span> <span class="pre">nouveau</span> <span class="pre">H2&lt;/h2&gt;&quot;</span></code></p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="mercredi-2020-10-28">
+<h2>Mercredi 2020/10/28<a class="headerlink" href="#mercredi-2020-10-28" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="javascript-conditions-if">
-<h2>Javascript conditions IF<a class="headerlink" href="#javascript-conditions-if" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Javascript conditions IF<a class="headerlink" href="#javascript-conditions-if" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="section" id="decouverte-des-conditions-if-et-exercices">
-<h3>decouverte des conditions IF  et exercices<a class="headerlink" href="#decouverte-des-conditions-if-et-exercices" title="Lien permanent vers ce titre">¶</a></h3>
+<h4>decouverte des conditions IF  et exercices<a class="headerlink" href="#decouverte-des-conditions-if-et-exercices" title="Lien permanent vers ce titre">¶</a></h4>
 <ul class="simple">
 <li><p>if</p></li>
 <li><p>else if</p></li>
@@ -55,7 +286,7 @@
 </ul>
 </div>
 <div class="section" id="si-vrai-true">
-<h3>si vrai (true)<a class="headerlink" href="#si-vrai-true" title="Lien permanent vers ce titre">¶</a></h3>
+<h4>si vrai (true)<a class="headerlink" href="#si-vrai-true" title="Lien permanent vers ce titre">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
   <span class="n">alert</span><span class="p">(</span><span class="s2">&quot;vrais a == b&quot;</span><span class="p">);</span>
 <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="o">===</span> <span class="n">d</span><span class="p">)</span> <span class="p">{</span>
@@ -69,9 +300,9 @@
 </div>
 </div>
 <div class="section" id="jeudi-2020-10-29">
-<h1>Jeudi 2020/10/29<a class="headerlink" href="#jeudi-2020-10-29" title="Lien permanent vers ce titre">¶</a></h1>
+<h2>Jeudi 2020/10/29<a class="headerlink" href="#jeudi-2020-10-29" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="javascript-conditions-switch">
-<h2>Javascript conditions SWITCH<a class="headerlink" href="#javascript-conditions-switch" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Javascript conditions SWITCH<a class="headerlink" href="#javascript-conditions-switch" title="Lien permanent vers ce titre">¶</a></h3>
 <p>decouverte des conditions SWITCH et exercices
 la condition switch à pour parametre
 une valeur ou une variable entre les ()
@@ -96,9 +327,9 @@ valeur ce trouve das se cas</p>
 </div>
 </div>
 <div class="section" id="lundi-2020-11-02">
-<h1>Lundi 2020/11/02<a class="headerlink" href="#lundi-2020-11-02" title="Lien permanent vers ce titre">¶</a></h1>
+<h2>Lundi 2020/11/02<a class="headerlink" href="#lundi-2020-11-02" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="javascript-boucle-for">
-<h2>Javascript boucle FOR<a class="headerlink" href="#javascript-boucle-for" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Javascript boucle FOR<a class="headerlink" href="#javascript-boucle-for" title="Lien permanent vers ce titre">¶</a></h3>
 <p>boucle FOR et exercices</p>
 <p>parametre 1  i=0 on commance la boucle par 0
 parametre 2  tant que i &lt;= 10 continue la boucle
@@ -111,9 +342,9 @@ c++ ancremante la variable i par 1</p>
 </div>
 </div>
 <div class="section" id="mardi-2020-11-03">
-<h1>Mardi 2020/11/03<a class="headerlink" href="#mardi-2020-11-03" title="Lien permanent vers ce titre">¶</a></h1>
+<h2>Mardi 2020/11/03<a class="headerlink" href="#mardi-2020-11-03" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="javascript-boucle-while">
-<h2>Javascript boucle WHILE<a class="headerlink" href="#javascript-boucle-while" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Javascript boucle WHILE<a class="headerlink" href="#javascript-boucle-while" title="Lien permanent vers ce titre">¶</a></h3>
 <p>boucle WHILE et exercices</p>
 <p>je declare une variable var i=1 pour commance la boucle par 1
 je met comme parametre tant que i &lt;= 10 continue la boucle
@@ -129,9 +360,9 @@ c++ ancremente la variable i par 1</p>
 </div>
 </div>
 <div class="section" id="lundi-2020-11-09">
-<h1>Lundi 2020/11/09<a class="headerlink" href="#lundi-2020-11-09" title="Lien permanent vers ce titre">¶</a></h1>
+<h2>Lundi 2020/11/09<a class="headerlink" href="#lundi-2020-11-09" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="javascript-tables">
-<h2>Javascript Tables<a class="headerlink" href="#javascript-tables" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Javascript Tables<a class="headerlink" href="#javascript-tables" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Table array() et exercices</p>
 <p>je decrale une variable « cars » et j”alimente par une tableau
 la difference entre une variable avec une seule valeur, et une variable
@@ -147,9 +378,9 @@ les taleau fonction par « position » autrement appeler « clé », la prem
 </div>
 </div>
 <div class="section" id="mardi-2020-11-10">
-<h1>Mardi 2020/11/10<a class="headerlink" href="#mardi-2020-11-10" title="Lien permanent vers ce titre">¶</a></h1>
+<h2>Mardi 2020/11/10<a class="headerlink" href="#mardi-2020-11-10" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="javascript-tp-boutique">
-<h2>Javascript TP Boutique<a class="headerlink" href="#javascript-tp-boutique" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Javascript TP Boutique<a class="headerlink" href="#javascript-tp-boutique" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Nous avons crée un projet BOUTIQUE pour faire des exercices HTML,CSS et JS</p>
 <p>Le projet à pour but de mettre en place tous ce que nous avons fait depuis le debut des cours.</p>
 <ul class="simple">
@@ -161,37 +392,37 @@ les taleau fonction par « position » autrement appeler « clé », la prem
 </div>
 </div>
 <div class="section" id="jeudi-2020-11-12">
-<h1>Jeudi 2020/11/12<a class="headerlink" href="#jeudi-2020-11-12" title="Lien permanent vers ce titre">¶</a></h1>
+<h2>Jeudi 2020/11/12<a class="headerlink" href="#jeudi-2020-11-12" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="exercice-pour-comprendre-les-tableaux">
-<h2>Exercice pour comprendre les tableaux<a class="headerlink" href="#exercice-pour-comprendre-les-tableaux" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Exercice pour comprendre les tableaux<a class="headerlink" href="#exercice-pour-comprendre-les-tableaux" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Ecrire une liste d”élèves dans un tableau javascript et l”écrire sous forme de liste html grâce à une boucle for.</p>
 <p>Puis ajouter un bouton qui trie la liste par ordre alphabétique et qui la réaffiche.</p>
 <p>Pour ne pas dupliquer le code on utilise une fonction !</p>
 </div>
 <div class="section" id="travail-sur-les-commentaires-dans-le-code">
-<h2>Travail sur les commentaires dans le code<a class="headerlink" href="#travail-sur-les-commentaires-dans-le-code" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Travail sur les commentaires dans le code<a class="headerlink" href="#travail-sur-les-commentaires-dans-le-code" title="Lien permanent vers ce titre">¶</a></h3>
 </div>
 <div class="section" id="reprise-du-tp-banque">
-<h2>Reprise du TP banque<a class="headerlink" href="#reprise-du-tp-banque" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Reprise du TP banque<a class="headerlink" href="#reprise-du-tp-banque" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Adapter le code du formateur qui ne marche que pour le premier compte, pour qu”il marche pour les 2 comptes !</p>
 <p><strong>Sans faire de copier coller</strong></p>
 </div>
 </div>
 <div class="section" id="vendredi-2020-11-13">
-<h1>Vendredi 2020/11/13<a class="headerlink" href="#vendredi-2020-11-13" title="Lien permanent vers ce titre">¶</a></h1>
-<div class="section" id="id1">
-<h2>Reprise du TP banque<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Vendredi 2020/11/13<a class="headerlink" href="#vendredi-2020-11-13" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="id6">
+<h3>Reprise du TP banque<a class="headerlink" href="#id6" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Objectif: maîtriser les fonctions.</p>
 <p>On essaie de faire des fonctions qui marchent pour n”importe lequel des comptes bancaires html.</p>
 <p>Alors qu”avant la fonction ne modifiait que le premier compte qu”elle trouvait, il faut maintenant lui donner le compte qu”elle doit modifier.</p>
 </div>
 <div class="section" id="addendum-fonctions">
-<h2>Addendum fonctions :<a class="headerlink" href="#addendum-fonctions" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Addendum fonctions :<a class="headerlink" href="#addendum-fonctions" title="Lien permanent vers ce titre">¶</a></h3>
 <p><strong>Une fonction est une ACTION</strong>, donc on doit lui dire qui doit l”effectuer, et avec quoi etc.</p>
 <p>=&gt; les arguments sont <strong>indispensables</strong> !</p>
 </div>
 <div class="section" id="installation-git-github">
-<h2>Installation git + github<a class="headerlink" href="#installation-git-github" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Installation git + github<a class="headerlink" href="#installation-git-github" title="Lien permanent vers ce titre">¶</a></h3>
 <ol class="simple">
 <li><p>création du compte github</p></li>
 <li><p>installation de git sur les pc (pour windows par ex c”est ici :<a class="reference external" href="gitforwindows.org">git for windows</a>) (on accepte tous les paramètres par défaut)</p></li>
@@ -205,22 +436,22 @@ les taleau fonction par « position » autrement appeler « clé », la prem
 </div>
 </div>
 <div class="section" id="lundi-2020-11-16">
-<h1>Lundi 2020/11/16<a class="headerlink" href="#lundi-2020-11-16" title="Lien permanent vers ce titre">¶</a></h1>
-<div class="section" id="id2">
-<h2>Javascript TP Boutique<a class="headerlink" href="#id2" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Lundi 2020/11/16<a class="headerlink" href="#lundi-2020-11-16" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="id7">
+<h3>Javascript TP Boutique<a class="headerlink" href="#id7" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Nous avons continuer sur le projet BOUTIQUE en integrent le JS
 Creation des fonction et les tableau et execution à partir du HTML</p>
 </div>
 </div>
 <div class="section" id="mardi-2020-11-17">
-<h1>Mardi 2020/11/17<a class="headerlink" href="#mardi-2020-11-17" title="Lien permanent vers ce titre">¶</a></h1>
-<div class="section" id="id3">
-<h2>Javascript TP Boutique<a class="headerlink" href="#id3" title="Lien permanent vers ce titre">¶</a></h2>
+<h2>Mardi 2020/11/17<a class="headerlink" href="#mardi-2020-11-17" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="id8">
+<h3>Javascript TP Boutique<a class="headerlink" href="#id8" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Nous avons continuer sur le projet BOUTIQUE en integrent le JS
 Creation des fonctions, les condition, les boucles et les tableaux et execution à partir du HTML</p>
 </div>
 <div class="section" id="javascript-objet">
-<h2>Javascript Objet<a class="headerlink" href="#javascript-objet" title="Lien permanent vers ce titre">¶</a></h2>
+<h3>Javascript Objet<a class="headerlink" href="#javascript-objet" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Decouverte des Objet
 un objet contient des propriétés et des méthodes :</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">car</span> <span class="o">=</span> <span class="p">{</span> 
@@ -234,6 +465,7 @@ un objet contient des propriétés et des méthodes :</p>
 <p>pour appeler un une propriété dans l”objet car on appel la variable suivie d”un point suivie du nom de propriété</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">car</span><span class="p">.</span><span class="nx">model</span><span class="p">;</span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -257,49 +489,28 @@ un objet contient des propriétés et des méthodes :</p>
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Mercredi 2020/10/28</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#javascript-conditions-if">Javascript conditions IF</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#jeudi-2020-10-29">Jeudi 2020/10/29</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#javascript-conditions-switch">Javascript conditions SWITCH</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#lundi-2020-11-02">Lundi 2020/11/02</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#javascript-boucle-for">Javascript boucle FOR</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#mardi-2020-11-03">Mardi 2020/11/03</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#javascript-boucle-while">Javascript boucle WHILE</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#lundi-2020-11-09">Lundi 2020/11/09</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#javascript-tables">Javascript Tables</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#mardi-2020-11-10">Mardi 2020/11/10</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#javascript-tp-boutique">Javascript TP Boutique</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#jeudi-2020-11-12">Jeudi 2020/11/12</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#exercice-pour-comprendre-les-tableaux">Exercice pour comprendre les tableaux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#travail-sur-les-commentaires-dans-le-code">Travail sur les commentaires dans le code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#reprise-du-tp-banque">Reprise du TP banque</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#vendredi-2020-11-13">Vendredi 2020/11/13</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Reprise du TP banque</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#addendum-fonctions">Addendum fonctions :</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#installation-git-github">Installation git + github</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#lundi-2020-11-16">Lundi 2020/11/16</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">Javascript TP Boutique</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#mardi-2020-11-17">Mardi 2020/11/17</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id3">Javascript TP Boutique</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#javascript-objet">Javascript Objet</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Cours TP DWWM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#mardi-2020-10-06">Mardi 2020/10/06</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lundi-2020-10-12">Lundi 2020/10/12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mardi-2020-10-13">Mardi 2020/10/13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jeudi-2020-10-15">Jeudi 2020/10/15</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vendredi-2020-10-16">Vendredi 2020/10/16</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lundi-2020-10-19">Lundi 2020/10/19</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mardi-2020-10-20">Mardi 2020/10/20</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mercredi-2020-10-21">Mercredi 2020/10/21</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jeudi-2020-10-22">Jeudi 2020/10/22</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lundi-2020-10-26">Lundi 2020/10/26</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mardi-2020-10-27">Mardi 2020/10/27</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mercredi-2020-10-28">Mercredi 2020/10/28</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jeudi-2020-10-29">Jeudi 2020/10/29</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lundi-2020-11-02">Lundi 2020/11/02</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mardi-2020-11-03">Mardi 2020/11/03</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lundi-2020-11-09">Lundi 2020/11/09</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mardi-2020-11-10">Mardi 2020/11/10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jeudi-2020-11-12">Jeudi 2020/11/12</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vendredi-2020-11-13">Vendredi 2020/11/13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lundi-2020-11-16">Lundi 2020/11/16</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mardi-2020-11-17">Mardi 2020/11/17</a></li>
 </ul>
 </li>
 </ul>
