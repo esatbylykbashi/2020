@@ -15,3 +15,4 @@ Pour ne pas dupliquer le code on utilise une fonction !
 Adapter le code du formateur qui ne marche que pour le premier compte, pour qu'il marche pour les 2 comptes !
 
 **Sans faire de copier coller**
+

@@ -11,3 +11,4 @@ Le projet à pour but de mettre en place tous ce que nous avons fait depuis le d
 * JS, creation des variable des fonctions, des tables, conditions et leurs utlisation, 
 
 La structure HTML et CSS est realiser par tous le groupe le jour meme
+

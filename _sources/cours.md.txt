@@ -39,6 +39,7 @@ if (a == b) {
   alert("faux");
 }
 ```
+
 ## Jeudi 2020/10/29
 
 ### Javascript conditions SWITCH
@@ -50,22 +51,23 @@ et elle fonctionne par des case (cas)
 le break; permet de stoper le cas si la
 valeur ce trouve das se cas 
 
-* var a = 5;
+```
+var a = 5;
 
-* switch (a) {
-* case "admin":
-* alert("switch votre role est admin");
-* break;
-* case 5:
-* case 6:
-* 
-* alert("switch la valeur est 5");
-* break;
-* default:
-* alert("switch rien");
-* }
+switch (a) {
+  case "admin":
+    alert("switch votre role est admin");
+    break;
+  case 5:
+  case 6:
+    alert("switch la valeur est 5");
+    break;
+  default:
+    alert("switch rien");
+}
+```
 
-## ## Lundi 2020/11/02
+## Lundi 2020/11/02
 
 ### Javascript boucle FOR
 
@@ -79,7 +81,9 @@ c++ ancremante la variable i par 1
 for (i = 1; i <= 10; i++) {
   console.log(i);
 }
-```## Mardi 2020/11/03
+```
+
+## Mardi 2020/11/03
 
 ### Javascript boucle WHILE
 
@@ -129,7 +133,9 @@ Le projet à pour but de mettre en place tous ce que nous avons fait depuis le d
 * CSS, mise en place des styles dans tous le projet
 * JS, creation des variable des fonctions, des tables, conditions et leurs utlisation, 
 
-La structure HTML et CSS est realiser par tous le groupe le jour meme## Jeudi 2020/11/12
+La structure HTML et CSS est realiser par tous le groupe le jour meme
+
+## Jeudi 2020/11/12
 
 ### Exercice pour comprendre les tableaux
 
@@ -145,7 +151,9 @@ Pour ne pas dupliquer le code on utilise une fonction !
 
 Adapter le code du formateur qui ne marche que pour le premier compte, pour qu'il marche pour les 2 comptes !
 
-**Sans faire de copier coller**## Vendredi 2020/11/13
+**Sans faire de copier coller**
+
+## Vendredi 2020/11/13
 
 ### Reprise du TP banque
 
@@ -170,12 +178,16 @@ Alors qu'avant la fonction ne modifiait que le premier compte qu'elle trouvait, 
 5. premier commit => autorisations github demandées et acceptées !
 6. modifier un fichier (créer un README par exemple) et le "commiter" et l'envoyer sur github
 7. on vérifie que tout est bien affiché sur github
-8. profit## Lundi 2020/11/16
+8. profit
+
+## Lundi 2020/11/16
 
 ### Javascript TP Boutique
 
 Nous avons continuer sur le projet BOUTIQUE en integrent le JS
-Creation des fonction et les tableau et execution à partir du HTML## Mardi 2020/11/17
+Creation des fonction et les tableau et execution à partir du HTML
+
+## Mardi 2020/11/17
 
 ### Javascript TP Boutique
 
@@ -201,3 +213,4 @@ pour appeler un une propriété dans l'objet car on appel la variable suivie d'u
 ```javascript
 car.model;
 ```
+
