@@ -204,9 +204,3 @@ Indispensable ! surtout pour les fonctions javascript.
 1. on sélectionne l'élément à modifier grâce à un sélecteur CSS _qu'on connaît déjà_, et grâce aux fonctions `document.querySelector("selecteur>css.complique:first-child")`(pour récupérer le premier élément trouvé) et  `document.querySelectorAll("selecteur>css.complique:first-child")` (pour récupérer tous les éléments qui correspondent)
 2. une fois récupéré dans une variable "elementHtml" (par exemple) on modifie `elementHtml.innerText = "TOTOTATATITI"` ou `elementHtml.InnerHTML = "<h2>Un nouveau H2</h2>"`
 
-## Mardi 2020/10/28
-
-### Javascript
-
-decouverte des IF et des boucles FOR et WHILE.
-
