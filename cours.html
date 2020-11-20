@@ -468,6 +468,79 @@ un objet contient des propriétés et des méthodes :</p>
 </div>
 </div>
 </div>
+<div class="section" id="jeudi-2020-11-19">
+<h2>Jeudi 2020/11/19<a class="headerlink" href="#jeudi-2020-11-19" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="travail-sur-les-objets">
+<h3>Travail sur les objets<a class="headerlink" href="#travail-sur-les-objets" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Création d”un site web simple pour afficher une liste d”élèves.</p>
+<p>Les élèves sont des objets avec un nom, un prénom et un âge.</p>
+<p>Travail collaboratif sur glitch : https://glitch.com/edit/#!/different-boundless-break</p>
+<p>On a bien noté qu”il fallait utiliser la syntaxe « . » pour accéder à la propriété d”un objet.
+Mais on peut également y accéder en faisant <code class="docutils literal notranslate"><span class="pre">objet[&quot;string_propriete&quot;]</span></code> .
+Exemple : <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3][&quot;length&quot;]</span></code></p>
+</div>
+<div class="section" id="fonction-en-parametre-d-une-fonction">
+<h3>Fonction en paramètre d”une fonction<a class="headerlink" href="#fonction-en-parametre-d-une-fonction" title="Lien permanent vers ce titre">¶</a></h3>
+<p>On a essayé de trier la liste des objets. Mais javascript n”est pas capable de décider si un objet est oui ou non plus grand q”un autre !!</p>
+<p>Par exemple est-ce que l”objet <code class="docutils literal notranslate"><span class="pre">{nom:</span> <span class="pre">&quot;Rambo&quot;,</span> <span class="pre">prenom:</span> <span class="pre">&quot;John&quot;}</span></code> est plus grand que l”objet <code class="docutils literal notranslate"><span class="pre">{nom:</span> <span class="pre">&quot;Schwarzenegger&quot;,</span> <span class="pre">prenom:</span> <span class="pre">&quot;Arnold&quot;}</span></code> ?? puisqu”ils font parti tous les 2 de la liste <code class="docutils literal notranslate"><span class="pre">expandables</span></code>.</p>
+<p>Comme javascript ne peut pas le deviner, il nous demande de lui donner une fonction capable de comparer 2 éléments l”un par rapport à l”autre. Elle doit renvoyer 1 si le premier est plus grand, -1 sinon.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">comparerBourrin</span><span class="p">(</span><span class="nx">acteur1</span><span class="p">,</span> <span class="nx">acteur2</span><span class="p">){</span>
+   <span class="k">return</span> <span class="nx">acteur1</span><span class="p">.</span><span class="nx">nom</span> <span class="o">&gt;</span> <span class="nx">acteur2</span><span class="p">.</span><span class="nx">nom</span> <span class="o">?</span> <span class="mf">1</span> <span class="o">:</span> <span class="o">-</span><span class="mf">1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Et pour l”utiliser il faut la passer, <strong>sans l”appeler</strong> en argument de l”appel de <code class="docutils literal notranslate"><span class="pre">sort()</span></code>, c”est à dire dans notre cas : <code class="docutils literal notranslate"><span class="pre">expandables.sort(comparerBourrin)</span></code>.</p>
+<p>Puis on a essayé de faire une bascule pour se souvenir de l”état de tri (ascendant ou descendant) entre les clics.</p>
+</div>
+</div>
+<div class="section" id="vendredi-2020-11-20">
+<h2>Vendredi 2020/11/20<a class="headerlink" href="#vendredi-2020-11-20" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="reprise-du-tp-objet">
+<h3>Reprise du TP « objet »<a class="headerlink" href="#reprise-du-tp-objet" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Explications détaillées du TP, revue des concepts de la veille, notamment les appels de fonctions en paramètre d”autres fonctions.</p>
+</div>
+<div class="section" id="condition-ternaire">
+<h3>Condition « ternaire »<a class="headerlink" href="#condition-ternaire" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Version abrégée du test :</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nx">condition</span><span class="p">){</span>
+    <span class="nx">action1</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">action2</span><span class="p">();</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>en</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nx">condition</span><span class="p">)</span> <span class="o">?</span> <span class="nx">action1</span><span class="p">()</span> <span class="o">:</span> <span class="nx">action2</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>et le résultat des actions 1 ou 2, s”il y a des <code class="docutils literal notranslate"><span class="pre">return</span></code> dans ces fonctions, peut être stocké dans une variable, par ex:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">resultat</span> <span class="o">=</span> <span class="nx">condition</span> <span class="o">?</span> <span class="nx">action1</span><span class="p">()</span> <span class="o">:</span> <span class="mf">0</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="premier-apercu-de-la-methode-bind">
+<h3>Premier aperçu de la méthode <code class="docutils literal notranslate"><span class="pre">.bind</span></code><a class="headerlink" href="#premier-apercu-de-la-methode-bind" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Ce sera important quand on abordera les classes ou React ou les fonctions fléchées ES6, donc on a abordé la méthode <code class="docutils literal notranslate"><span class="pre">.bind</span></code> pour les fonctions.</p>
+<p>On peut « pré-remplir » un argument d”une fonction, sans l”appeler, pour obtenir une fonction avec autant d”arguments disponibles en moins.</p>
+<p>Si l”on a par exemple une fonction <code class="docutils literal notranslate"> <span class="pre">consulteManga(serie,</span> <span class="pre">tome,</span> <span class="pre">chapitre)</span></code> qui renvoie des informations sur un chapitre dans un tome d”une série de manga, on peut faire la chose suivante :</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">consulteMangaNaruto</span> <span class="o">=</span> <span class="nx">consulteManga</span><span class="p">.</span><span class="nx">bind</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s2">&quot;Naruto&quot;</span><span class="p">);</span>
+
+<span class="c1">// affiche les informations spécifiques concernant la série Naruto :</span>
+<span class="nx">consulteMangaNaruto</span><span class="p">(</span><span class="s2">&quot;tome24&quot;</span><span class="p">,</span> <span class="s2">&quot;chapitre236&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>On voit que la fonction <code class="docutils literal notranslate"><span class="pre">consulteMangaNaruto</span></code> n”a plus que 2 paramètres. Car elle a déjà un argument qui lui est donné par défaut, c”est « Naruto », donné en première position.</p>
+<p><code class="docutils literal notranslate"><span class="pre">consulteMangaNaruto</span></code> est donc une variable, certes, mais surtout une <strong>fonction</strong> ! qui est renvoyée par la méthode <code class="docutils literal notranslate"><span class="pre">.bind</span></code> de la fonction <code class="docutils literal notranslate"><span class="pre">consulteManga</span></code> - qui est donc en passant également un objet !</p>
+</div>
+<div class="section" id="revisions-html">
+<h3>Révisions HTML<a class="headerlink" href="#revisions-html" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Pour se remettre de ces émotions, petite révision HTML grâce au site <a class="reference external" href="https://jgthms.com/web-design-in-4-minutes/">webdesign en 4minutes</a></p>
+</div>
+<div class="section" id="revisions-javascript">
+<h3>Révisions Javascript<a class="headerlink" href="#revisions-javascript" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Fait tous ensemble collaborativement, reprise depuis les bases, via le tutoriel <a class="reference external" href="https://jgthms.com/javascript-in-14-minutes/">javascript en 14 minutes</a> ! (C”est mensonger, cela nous a pris 2h !!)</p>
+</div>
+</div>
 </div>
 
 
@@ -511,6 +584,8 @@ un objet contient des propriétés et des méthodes :</p>
 <li class="toctree-l2"><a class="reference internal" href="#vendredi-2020-11-13">Vendredi 2020/11/13</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lundi-2020-11-16">Lundi 2020/11/16</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#mardi-2020-11-17">Mardi 2020/11/17</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jeudi-2020-11-19">Jeudi 2020/11/19</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vendredi-2020-11-20">Vendredi 2020/11/20</a></li>
 </ul>
 </li>
 </ul>

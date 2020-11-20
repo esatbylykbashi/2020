@@ -1,0 +1,57 @@
+## Vendredi 2020/11/20
+
+### Reprise du TP "objet"
+
+Explications détaillées du TP, revue des concepts de la veille, notamment les appels de fonctions en paramètre d'autres fonctions.
+
+### Condition "ternaire"
+
+Version abrégée du test :
+
+```javascript
+if (condition){
+    action1();
+} else {
+    action2();
+}
+```
+
+en 
+
+```javascript
+(condition) ? action1() : action2();
+```
+
+et le résultat des actions 1 ou 2, s'il y a des `return` dans ces fonctions, peut être stocké dans une variable, par ex: 
+
+```javascript
+var resultat = condition ? action1() : 0;
+```
+
+### Premier aperçu de la méthode `.bind`
+
+Ce sera important quand on abordera les classes ou React ou les fonctions fléchées ES6, donc on a abordé la méthode `.bind` pour les fonctions.
+
+On peut "pré-remplir" un argument d'une fonction, sans l'appeler, pour obtenir une fonction avec autant d'arguments disponibles en moins.
+
+Si l'on a par exemple une fonction ` consulteManga(serie, tome, chapitre)` qui renvoie des informations sur un chapitre dans un tome d'une série de manga, on peut faire la chose suivante :
+
+```javascript
+var consulteMangaNaruto = consulteManga.bind(null, "Naruto");
+
+// affiche les informations spécifiques concernant la série Naruto :
+consulteMangaNaruto("tome24", "chapitre236");
+```
+
+On voit que la fonction `consulteMangaNaruto` n'a plus que 2 paramètres. Car elle a déjà un argument qui lui est donné par défaut, c'est "Naruto", donné en première position.
+
+`consulteMangaNaruto` est donc une variable, certes, mais surtout une **fonction** ! qui est renvoyée par la méthode `.bind` de la fonction `consulteManga` - qui est donc en passant également un objet !
+
+### Révisions HTML
+
+Pour se remettre de ces émotions, petite révision HTML grâce au site [webdesign en 4minutes](https://jgthms.com/web-design-in-4-minutes/)
+
+### Révisions Javascript
+
+Fait tous ensemble collaborativement, reprise depuis les bases, via le tutoriel [javascript en 14 minutes](https://jgthms.com/javascript-in-14-minutes/) ! (C'est mensonger, cela nous a pris 2h !!)
+

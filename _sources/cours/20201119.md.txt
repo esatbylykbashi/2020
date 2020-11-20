@@ -1,0 +1,32 @@
+## Jeudi 2020/11/19
+
+### Travail sur les objets
+
+Création d'un site web simple pour afficher une liste d'élèves.
+
+Les élèves sont des objets avec un nom, un prénom et un âge.
+
+Travail collaboratif sur glitch : https://glitch.com/edit/#!/different-boundless-break
+
+On a bien noté qu'il fallait utiliser la syntaxe "." pour accéder à la propriété d'un objet. 
+Mais on peut également y accéder en faisant `objet["string_propriete"]` . 
+Exemple : `[1, 2, 3]["length"]` 
+
+### Fonction en paramètre d'une fonction
+
+On a essayé de trier la liste des objets. Mais javascript n'est pas capable de décider si un objet est oui ou non plus grand q'un autre !!
+
+Par exemple est-ce que l'objet `{nom: "Rambo", prenom: "John"}` est plus grand que l'objet `{nom: "Schwarzenegger", prenom: "Arnold"}` ?? puisqu'ils font parti tous les 2 de la liste `expandables`.
+
+Comme javascript ne peut pas le deviner, il nous demande de lui donner une fonction capable de comparer 2 éléments l'un par rapport à l'autre. Elle doit renvoyer 1 si le premier est plus grand, -1 sinon.
+
+```javascript
+function comparerBourrin(acteur1, acteur2){
+   return acteur1.nom > acteur2.nom ? 1 : -1;
+}
+```
+
+Et pour l'utiliser il faut la passer, **sans l'appeler** en argument de l'appel de `sort()`, c'est à dire dans notre cas : `expandables.sort(comparerBourrin)`.
+
+Puis on a essayé de faire une bascule pour se souvenir de l'état de tri (ascendant ou descendant) entre les clics.
+
