@@ -21,3 +21,14 @@ table thead tr {
 .age:after {
   content: " ans"; 
 }
+
+button {
+  background-color: #eee;
+  box-shadow: 1 1 2 rgba(0,0,0, 0.2);
+  padding: 2px 10px;
+  margin: 0px 5px;
+  border-radius: 15%;
+}
+table button {
+  color: #555;
+}
