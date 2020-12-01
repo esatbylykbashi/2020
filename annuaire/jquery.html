@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annuaire</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="fenetre">Hello</div>
+
+    <input type="text" id="text" value="99">
+
+
+
+    <button class="fermer">Fermer Fenetre</button>
+    <button id="ouvrir">Ouvrir Fenetre</button>
+    <button id="getTextValue">Get VALUE</button>
+    <button id="cacher">Cacher</button>
+    <button class="toggle">toggle</button>
+    <button class="append">append</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet suscipit odit sint veritatis deleniti at minima praesentium, accusantium, culpa, incidunt a. Modi et voluptas aspernatur quas? Facilis, voluptas soluta.</p>
+    <div></div>
+    <script src="js/annuaire.js"></script>
+
+    <script>
+        var getP = document.querySelector("p").innerHTML; // javascript
+
+        var getP = $("p").html(); // jquery
+        alert(getP);
+
+
+        $(".fermer").click(function() {
+            $(".fenetre").hide();
+            // fermerFenetre(".fenetre");
+        });
+
+        $("#cacher").click(function() {
+            $(this).hide();
+        });
+
+
+        $("#getTextValue").click(function() {
+            alert($("#text").val());
+            $("#text").val("100");
+        });
+
+        $("#ouvrir").click(function() {
+            $(".fenetre").show();
+
+            var text = $("p").html();
+
+            $("p").hide();
+
+            $(".fenetre").html(text);
+        });
+
+        $(".toggle").click(function() {
+            $("p").toggle();
+        });
+
+        $("#text").keyup(function() {
+            var text = $("#text").val();
+            $("p").text(text);
+            $("div").html(text);
+        });
+
+        $(".append").click(function() {
+            $("p").append(" <b>Appended text</b>.");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annuaire</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <button class="bgBlue">Blue</button>
+    <button class="bgRed">Red</button>
+
+    <button id="ouvrir">+</button>
+
+    <div class="fenetre">
+        <form onsubmit="return false;">
+            nom : <input type="text" name="nom" id="nom">
+            <br> prenom : <input type="text" name="prenom" id="prenom">
+            <br> tel : <input type="text" name="tel" id="tel">
+            <br> email : <input type="text" name="email" id="email"><br>
+            <button id="envoyer">Envoyer</button>
+            <button id="fermer">Fermer</button>
+        </form>
+
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>n°</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Tel</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="tAnnuaire"></tbody>
+    </table>
+    <hr>
+    <input type="text" id="num1"> + <input type="text" id="num2"> <button id="egale">=</button> <span id="resultat"></span>
+
+    <script>
+        $("#ouvrir").click(function() {
+            $(".fenetre").show();
+        });
+
+        $("#fermer").click(function() {
+            $(".fenetre").hide();
+        });
+
+        var num = 0;
+        $("#envoyer").click(function() {
+            num = num + 1;
+            $("#tAnnuaire").append("<tr>");
+            $("#tAnnuaire").append("<td>" + num + "</td>");
+            $("#tAnnuaire").append("<td>" + $("#nom").val() + "</td>");
+            $("#tAnnuaire").append("<td>" + $("#prenom").val() + "</td>");
+            $("#tAnnuaire").append("<td>" + $("#tel").val() + "</td>");
+            $("#tAnnuaire").append("<td>" + $("#email").val() + "</td>");
+            $("#tAnnuaire").append("</tr>");
+
+            // $("#tAnnuaire").append("<tr><td>" + $("#nom").val() + "</td><td>" + $("#prenom").val() + "</td><td>" + $("#tel").val() + "</td><td>" + $("#email").val() + "</td></tr>");
+        });
+
+
+        $(".bgBlue").click(function() {
+            /*
+            $("table").addClass("bgBlue");
+            $("table").removeClass("bgRed");
+            */
+            $("table").addClass("bgBlue").removeClass("bgRed");
+
+
+        });
+
+        $(".bgRed").click(function() {
+            /*
+            $("table").addClass("bgRed");
+            $("table").removeClass("bgBlue");
+            */
+            $("table").removeClass("bgBlue").addClass("bgRed");
+        });
+
+
+        $("#egale").click(function() {
+            var resultat = parseInt($("#num1").val()) + parseInt($("#num2").val());
+            $("#resultat").text(resultat);
+        })
+    </script>
+</body>
+
+</html>

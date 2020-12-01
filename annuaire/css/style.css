@@ -1,0 +1,37 @@
+.fenetre {
+    display: none;
+    position: absolute;
+    right: 30%;
+    background-color: yellow;
+    border: white solid 10px;
+    padding: 20px;
+    top: 100px;
+    box-shadow: 0 0 30px grey;
+}
+
+.bgBlue {
+    background-color: blue;
+    color: white;
+}
+
+.bgRed {
+    background-color: red;
+    color: white;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
